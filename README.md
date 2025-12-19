@@ -128,6 +128,40 @@ The Contact form currently shows an alert. To integrate with a backend:
 - **React Icons** - Icon library
 - **React Router DOM** - Navigation (ready for multi-page setup)
 
+## 🚀 Deployment on Render
+
+This project is configured for easy deployment on Render as a static site.
+
+### Deploy to Render
+
+1. **Go to [Render Dashboard](https://dashboard.render.com/)**
+   - Sign in or create a free account
+
+2. **Create a New Static Site**
+   - Click "New +" button → Select "Static Site"
+   - Connect your GitHub repository
+
+3. **Configure Build Settings**
+   ```
+   Build Command:    npm install && npm run build
+   Publish Directory: dist
+   ```
+
+4. **Deploy**
+   - Click "Create Static Site"
+   - Render will automatically build and deploy your site
+   - You'll get a free `.onrender.com` URL
+
+### Auto-Deploy on Push
+
+Render automatically redeploys your site whenever you push changes to your GitHub repository!
+
+### Custom Domain (Optional)
+
+- Go to your site's "Settings" on Render
+- Add your custom domain under "Custom Domains"
+- Follow the DNS configuration instructions
+
 ## 📝 License
 
 This project is open source and available for educational purposes.
